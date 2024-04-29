@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"/>
+    <title>index</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+      * {margin:0;padding:0;} 
+      a {color:#4f4f4f;text-decoration:none;} 
+      body {font-family:"Roboto","Noto Sans KR",sans-serif;background-color:#fafafa;}
+      header {color:#fff;} 
+      header .logo-area {display:flex;align-items:center;padding:28px 30px;background-color:#333;} 
+      header .logo-area .logo {width:250px;height:22px;margin-right:10px;background-image:url("./logo_index.png");background-size:cover;} 
+      header .logo-area .title-wrap {display:flex;align-items:center;}
+      header .logo-area .title-wrap span {width:1px;height:18px;margin-right:10px;background-color:rgba(255, 255, 255, 0.2);} 
+      header .logo-area .title-wrap .title {font-size:20px;line-height:24px;font-weight:700;} 
+      header .project-name {padding:10px 30px;font-size:20px;line-height:24px;font-weight:700;background-color:#202020;} 
+      main {padding:20px;box-sizing:border-box;}
+      section + section {margin-top:20px;} 
+      section h1 {margin-bottom:4px;font-size:18px;line-height:22px;font-weight:700;} 
+      section .portal-box-wrap {display:flex;align-items:flex-start;gap:16px 18px;flex-wrap:wrap;}
+      section .portal-box-wrap .portal-box {width:295px;padding:22px 18px;border-radius:2px;background-color:#fff;box-sizing:border-box;} 
+      section .portal-box-wrap .portal-box ul {position:relative;padding-left:6px;} 
+      section .portal-box-wrap .portal-box ul + ul {margin-top:28px;} 
+      section .portal-box-wrap .portal-box ul::before {content:"";position:absolute;top:0;left:0;width:1px;height:100%;background-color:#d9d9d9;} 
+      section .portal-box-wrap .portal-box ul .sub-title {margin-bottom:10px;padding:4px 6px;font-size:16px;line-height:20px;font-weight:700;color:#202020;text-transform:capitalize;box-sizing:border-box;} 
+      section .portal-box-wrap .portal-box ul li {list-style:none;} 
+      section .portal-box-wrap .portal-box ul li + li {margin-top:2px;} 
+      section .portal-box-wrap .portal-box ul li a {display:block;width:100%;padding:5px 6px;border-radius:2px;font-size:14px;line-height:18px;box-sizing:border-box;}       
+      section .portal-box-wrap .portal-box ul li a:hover {background-color:#fafafa;} 
+      section .portal-box-wrap .portal-box ul li a:active {background-color:#DFDFDF;} 
+      section .portal-box-wrap .portal-box ul li.disable a {pointer-events:none;cursor:default;color:#d9d9d9;} 
+      section .portal-box-wrap .portal-box ul li.update a {background-color:#508cff;color:#fff;} 
+      section .portal-box-wrap .portal-box ul li.update a:hover {background-color:#3e6fec;} 
+      section .portal-box-wrap .portal-box ul li.update a:active {background-color:#2657D4;} 
+      section .portal-box-wrap .portal-box ul li.update-disable a {pointer-events:none;cursor:default;color:#ccd9ed;background-color:#f1f6ff;} 
+      footer {padding:0 30px 60px;} 
+      footer .footer-inner {padding-top:100px;} 
+      footer .footer-inner .copyright {font-size:14px;line-height:16px;text-align:center;color:#d4d4d4;} 
+      /* 모바일 */
+      @media screen and (max-width:647px) {
+        header .logo-area {flex-direction:column;align-items:flex-start;gap:10px 0;padding: 24px 20px 16px;}
+        section .portal-box-wrap .portal-box {width: 100%;}
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="logo-area">
+          <div class="logo"></div>
+          <div class="title-wrap">
+            <span></span>
+            <div class="title">Publishing index</div>
+          </div>
+        </div>
+        <div class="project-name">S2W_ASM Plus 3.0</div>
+      </header>
+      <main>
+        <section>
+          <h1>Common</h1>
+          <div class="portal-box-wrap">
+            <div class="portal-box">
+              <ul>
+                <li><a href="#" target="_blank">component</a></li>
+                <li><a href="#" target="_blank">component component component component component</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">modal</li>
+                <li><a href="" target="_blank">component</a></li>
+                <li class="disable"><a href="" target="_blank">modal_protocol_img</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Login</h1>
+          <div class="portal-box-wrap">
+            <div class="portal-box">
+              <ul>
+                <li class="update"><a href="" target="_blank">login</a></li>
+                <li><a href="" target="_blank">login - mfa</a></li>
+                <li class="update-disable"><a href="" target="_blank">login - mfa error</a></li>
+                <li><a href="" target="_blank">password</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Onboarding</h1>
+          <div class="portal-box-wrap">
+            <div class="portal-box">
+              <ul>
+                <li><a href="" target="_blank">1.ASM PLUS 소개</a></li>
+                <li><a href="" target="_blank">2.Seed data 입력</a></li>
+                <li><a href="" target="_blank">3.입력 Seed data 확인 - invalid</a></li>
+                <li><a href="" target="_blank">3.입력 Seed data 확인 - valid</a></li>
+                <li><a href="" target="_blank">3.입력 Seed data 확인 - valid - 2</a>
+                </li>
+                <li><a href="" target="_blank">3.입력 Seed data 확인 - nodata3.입력 Seed data 확인 - nodata3.입력 Seed data 확인 - nodata3.입력 Seed data 확인 - nodata</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Dashboard</h1>
+          <div class="portal-box-wrap">
+            <div class="portal-box">
+              <ul>
+                <li><a href="" target="_blank">common</a></li>
+                <li><a href="" target="_blank">ip</a></li>
+                <li><a href="" target="_blank">account</a></li>
+                <li><a href="" target="_blank">github</a></li>
+                <li><a href="" target="_blank">vulnerability</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">common</a></li>
+                <li><a href="" target="_blank">ip</a></li>
+                <li><a href="" target="_blank">account</a></li>
+                <li><a href="" target="_blank">github</a></li>
+                <li><a href="" target="_blank">vulnerability</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">popup popup popup popup popup popup</li>
+                <li><a href="" target="_blank">dashboard 설정</a></li>
+                <li> <a href="" target="_blank">Top 60 related vulnerability</a></li>
+                <li><a href="" target="_blank">account</a></li>
+                <li><a href="" target="_blank">github</a></li>
+                <li><a href="" target="_blank">vulnerability</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Dashboard</h1>
+          <div class="portal-box-wrap">
+            <div class="portal-box">
+              <ul>
+                <li><a href="" target="_blank">ip</a></li>
+                <li><a href="" target="_blank">subdomain</a></li>
+                <li><a href="" target="_blank">bookmark</a></li>
+                <li><a href="" target="_blank">hidden</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">nodata</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">popup</li>
+                <li><a href="" target="_blank">다운로드</a></li>
+                <li><a href="" target="_blank">다중 정렬</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">detail</li>
+                <li><a href="" target="_blank">detail</a></li>
+                <li><a href="" target="_blank">detail - aside</a></li>
+                <li class="update"><a href="" target="_blank">detail - account take over</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">detail - aside</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">popup</li>
+                <li><a href="" target="_blank">talon note 작성 - 1</a></li>
+                <li><a href="" target="_blank">talon note 작성 - 2</a></li>
+                <li><a href="" target="_blank">링크첨부</a></li>
+                <li><a href="" target="_blank">print 설정</a></li>
+                <li><a href="" target="_blank">Severity 가이드</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">print</li>
+                <li><a href="" target="_blank">print</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">print</a></li>
+                <li><a href="" target="_blank">print - Account Take-Over 영역</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">print</li>
+                <li><a href="" target="_blank">print</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">print</a></li>
+                <li><a href="" target="_blank">print - Account Take-Over 영역</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">print</li>
+                <li><a href="" target="_blank">print</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">print</a></li>
+                <li><a href="" target="_blank">print - Account Take-Over 영역</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">print</li>
+                <li><a href="" target="_blank">print</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">print</a></li>
+                <li><a href="" target="_blank">print - Account Take-Over 영역</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">print</li>
+                <li><a href="" target="_blank">print</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">print</a></li>
+                <li><a href="" target="_blank">print - Account Take-Over 영역</a></li>
+              </ul>
+            </div>
+            <div class="portal-box">
+              <ul>
+                <li class="sub-title">print</li>
+                <li><a href="" target="_blank">print</a></li>
+              </ul>
+              <ul>
+                <li class="sub-title">nodata</li>
+                <li><a href="" target="_blank">print</a></li>
+                <li><a href="" target="_blank">print - Account Take-Over 영역</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-inner">
+          <p class="copyright">
+            © 2024 PracticalSketch, Inc. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
